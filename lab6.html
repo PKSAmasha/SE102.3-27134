@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html> 
+<head>
+        <title> lecture </title>
+</head>
+      
+    <body>
+        <script>
+            window.onload=function()
+            { 
+                showPrompt();
+            }
+            function showPrompt()
+            {
+             var sum = 0;
+            for (var i=1; i<=5;i++)
+            {
+            var mark=window.prompt("enter marks:");
+            sum = sum +parseInt(mark);
+            }
+            var average= sum/5;
+            document.write("total is: ",sum);
+            document.write("<br/>");
+            document.write("average is: ",sum/5);
+           
+           var button= document.createElement("button");
+           button.innerHTML="grade";
+           button.onclick= function ()
+           {
+            if (average >30)
+             {window.alert("congraduation!");}
+             else
+             {window.alert("Better luck next time!");}
+           };
+           // to show the button(attaching the button to the website)
+           document.body.appendChild(button); //do not put inside ""
+        }
+       
+        </script>
+
+    </body>
+</html>
