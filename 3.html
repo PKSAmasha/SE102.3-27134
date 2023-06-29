@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html> 
+<head>
+        <title> lecture </title>
+</head>
+      
+    <body>
+        <script>
+            window.onload=function()
+            { 
+                showPrompt();
+            }
+            function showPrompt()
+            {
+             var sum = 0;
+            for (var i=1; i<=5;i++)
+            {
+            var mark=window.prompt("enter marks:");
+            sum = sum +parseInt(mark);
+            }
+            document.write("total is: ",sum);
+            document.write("<br/>");
+            document.write("average is: ",sum/5)
+            }
+            
+        </script>
+
+    </body>
+</html>
